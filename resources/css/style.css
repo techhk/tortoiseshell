@@ -35,6 +35,9 @@ header{
 .menu nav span{
   padding-right: 2rem;
 }
+.mobilemenu{
+  display: none;
+}
 .message{
   display:flex;
   justify-content: flex-end;
@@ -62,9 +65,14 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   height: 8rem;
   width: 5rem;
   margin-bottom: 3rem;
+}
+.examtext,.fittingtext,.deliverytext{
+  display:block;
+  text-align: center;
 }
 .service img{
   width:3.5rem;
@@ -110,4 +118,117 @@ footer{
 .bottom .container img{
   padding-right: 1rem;
   height:1.5rem;
+}
+/*Tablet version*/
+@media only screen and (max-width:1024px){
+  header{
+    padding-top:0rem;
+    height:22rem;
+/*    width:100%;*/
+  }
+  html{
+    width:100%;
+  }
+  .message{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .banner{
+    padding:0.75rem 4rem;
+  }
+  .banner span{
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width:470px){
+  header{
+    height: 17rem;
+    background-position: 20%;
+  }
+  .menu,.logo span{
+    display: none;
+  }
+  .mobilemenu {
+    display:block;
+  }
+  .mobilemenu nav span{
+    padding-right: 2rem;
+  }
+  .message{
+    margin-top:9rem;
+    margin-right:0rem;
+  }
+  .message{
+    padding:1rem 0rem 1rem 0rem;
+    text-align: center;
+    display: block;
+  }
+  .banner span{
+    font-size: 1rem;
+  }
+  .service{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+  .exam,.fitting,.delivery{
+    margin-right: 0rem;
+    /*margin-bottom: 1.54rem;*/
+  }
+  .exam{
+    margin-top: 3.77rem;
+  }
+  .exam,.fitting,.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  .examtext,.fittingtext,.deliverytext{
+    font-family: Helvetica;
+    font-size:0.77rem;
+  }
+  .examtext,.fittingtext{
+    padding-bottom: 1.54rem;
+  }
+  .deliverytext{
+    margin-bottom: 3.77rem;
+  }
+  .fitting{
+    height:6rem;
+  }
+  .about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+  .info h1{
+    width:100%;
+    text-align: center;
+  }
+  .info p{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    padding-left: 1rem;
+  }
+  footer span{
+    display: none;
+  }
+  .bottom .container{
+    display: block;
+    text-align: center;
+  }
+
 }
